@@ -13,17 +13,21 @@ let package = Package(
             "__ContentsquareUICore",
         ]),
     ],
+    dependencies: [
+        .package(url: "https://github.com/ContentSquare/apple-core-sdk.git", .upToNextMinor(from: "0.2.0")),
+    ],
     targets: [
         .target(
             name: "__ContentsquareUICore",
             dependencies: [
+                .product(name: "ContentsquareCore", package: "apple-core-sdk"),
                 "ContentsquareUICore",
             ]
         ),
         .binaryTarget(
             name: "ContentsquareUICore",
-            url: "https://github.com/contentsquare/ios-ui-core-sdk/releases/download/0.1.0/package.zip",
-            checksum: "bf7b0369829fff2e739f9c1f869b581fa54ca9db9e61e2ca295384465e824faf"
+            url: "https://github.com/contentsquare/ios-ui-core-sdk/releases/download/0.2.0/package.zip",
+            checksum: "870d42d2fbc4b6b35ada9b0defb09b12fc1e602cf511372487fe2a273173d29f"
     )
     ],
     swiftLanguageVersions: [.v5]

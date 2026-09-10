@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name = 'ContentsquareUICore'
-    s.version = '0.1.0'
+    s.version = '0.2.0'
     s.summary = 'Contentsquare shared libraries for UIKit and SwiftUI'
     s.homepage = 'https://docs.contentsquare.com/ios'
     s.author = { 'Contentsquare' => 'contact@contentsquare.com' }
@@ -29,6 +29,8 @@ Pod::Spec.new do |s|
 
     s.ios.deployment_target = '13.0'
     s.cocoapods_version = '>= 1.7.0'
+    
+    s.dependency 'ContentsquareCore', '~> 0.2.0'
     
     s.vendored_frameworks = [ 'ContentsquareUICore.xcframework' ]
     s.swift_versions = ['5.0']
