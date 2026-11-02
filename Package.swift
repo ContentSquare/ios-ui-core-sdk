@@ -26,8 +26,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "ContentsquareUICore",
-            url: "https://github.com/contentsquare/ios-ui-core-sdk/releases/download/0.2.1/package.zip",
-            checksum: "0896a82b9204547e1457614cf9bada5acd044dfaf48162da4981572e8058c504"
+            url: "https://github.com/contentsquare/ios-ui-core-sdk/releases/download/0.3.0/package.zip",
+            checksum: "026e7f6aa09c3dcce9a375a3b48d1252210ae06ffc01417a6b275b2713052528"
     )
     ],
     swiftLanguageVersions: [.v5]

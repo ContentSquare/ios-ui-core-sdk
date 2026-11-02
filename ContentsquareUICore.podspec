@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name = 'ContentsquareUICore'
-    s.version = '0.2.1'
+    s.version = '0.3.0'
     s.summary = 'Contentsquare shared libraries for UIKit and SwiftUI'
     s.homepage = 'https://docs.contentsquare.com/ios'
     s.author = { 'Contentsquare' => 'contact@contentsquare.com' }
